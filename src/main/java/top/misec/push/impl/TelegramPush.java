@@ -36,6 +36,6 @@ public class TelegramPush extends AbstractPush {
 
     @Override
     protected String generatePushBody(PushMetaInfo metaInfo, String content) {
-        return "chat_id=" + metaInfo.getChatId() + "&text=BILIBILI-HELPER任务简报\n" + content;
+        return "chat_id=" + metaInfo.getChatId() + "&disable_web_page_preview=True&text=BILIBILI-HELPER任务简报\n" + content;
     }
 }

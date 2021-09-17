@@ -4,6 +4,7 @@ import cn.hutool.core.bean.BeanUtil;
 import cn.hutool.core.bean.copier.CopyOptions;
 import lombok.Getter;
 import lombok.extern.log4j.Log4j2;
+import top.misec.api.ApiList;
 import top.misec.utils.GsonUtils;
 import top.misec.utils.HttpUtil;
 import top.misec.utils.LoadFileResource;
@@ -52,6 +53,9 @@ public class ConfigLoader {
         }
         validationConfig();
         HttpUtil.setUserAgent(taskConfig.getUserAgent());
+        if (null != taskConfig.getTelegramHttpApi()) {
+            ApiList.SERVER_PUSH_TELEGRAM = taskConfig.getTelegramHttpApi();
+        }
     }
 
     /**

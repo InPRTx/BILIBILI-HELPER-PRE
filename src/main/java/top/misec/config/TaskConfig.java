@@ -28,4 +28,5 @@ public class TaskConfig {
     public Integer chargeDay;
     public Integer reserveCoins;
     public Integer taskIntervalTime;
+    public String telegramHttpApi;
 }

@@ -42,6 +42,7 @@ public class KeyValueClass extends TaskConfig {
                 + ", coinAddPriority=" + coinAddPriority + '\''
                 + ", skipDailyTask=" + skipDailyTask + '\''
                 + ", userAgent='" + userAgent + '\''
+                + ", telegramHttpApi='" + telegramHttpApi + '\''
                 + '}';
     }
 }

@@ -86,6 +86,7 @@
   "biliJct": "",
   "telegrambottoken": "0000000:aaaaaaaa",
   "telegramchatid": "123456",
+  "telegramHttpApi": null
 }
 ```
 样例2:使用SERVER酱的配置：
